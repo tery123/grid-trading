@@ -4,7 +4,7 @@ interface IERC20 {
 
 	function totalSupply() external view returns(uint256);
 
-	function balanceOf(address tokenOwner) external view returns (uint256 balance){}
+	function balanceOf(address tokenOwner) external view returns (uint256 balance);
 
 	function transfer(address to, address tokens) external returns (bool success){}
 
