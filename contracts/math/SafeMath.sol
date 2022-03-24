@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (utils/math/SafeMath.sol)
 
-//pragma solidity ^0.4.25;
+pragma solidity ^0.4.25;
 
 // CAUTION
 // This version of SafeMath should only be used with Solidity 0.8 or later,
