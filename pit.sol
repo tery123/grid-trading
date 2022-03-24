@@ -6,13 +6,13 @@ interface IERC20 {
 
 	function balanceOf(address tokenOwner) external view returns (uint256 balance);
 
-	function transfer(address to, address tokens) external returns (bool success){}
+	function transfer(address to, address tokens) external returns (bool success);
 
-	function allowance(address tokenOwner, address spender) external view returns (uint256 remaining){}
+	function allowance(address tokenOwner, address spender) external view returns (uint256 remaining);
 
-	function approve(address spender, uint256 tokens) external returns (bool success){}
+	function approve(address spender, uint256 tokens) external returns (bool success);
 
-	function transferFrom (address from, address to, uint256 tokens) external returns(bool success){}
+	function transferFrom (address from, address to, uint256 tokens) external returns(bool success);
 
 	event Transfer(
 		address indexed from,
