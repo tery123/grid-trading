@@ -13,7 +13,8 @@ contract ERC20 is IERC20{
     mapping(address => uint256) _balances;
     mapping(address => mapping(address => uint256)) _approve;
 
-    uint256 private _totalSupply;
+    //uint256 private _totalSupply;
+    uint256 private _totalSupply; //must inheritance
 
     function totalSupply() external view returns (uint256){
         return _totalSupply;
