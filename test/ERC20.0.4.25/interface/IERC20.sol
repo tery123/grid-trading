@@ -20,8 +20,6 @@ interface IERC20{
 
 	function transferFrom (address from, address to, uint256 tokens) external returns(bool success);
 
-	function _transfer(address from, address to, uint256 tokens) internal returns (bool success);
-
 	event Transfer(
 		address indexed from,
 		address indexed to,
