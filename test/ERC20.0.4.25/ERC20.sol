@@ -6,6 +6,10 @@ import "https://github.com/tery123/grid-trading/blob/main/test/ERC20.0.4.25/inte
 contract ERC20 is IERC20{
     using SafeMath for uint256;
 
+    string public constant name = "baby token";
+    uint8 public constant deciamls = 18;
+    string public constant symbol = "BBT";
+
     mapping(address => uint256) _balances;
     mapping(address => mapping(address => uint256)) _approve;
 
