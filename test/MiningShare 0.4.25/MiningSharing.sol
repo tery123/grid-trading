@@ -71,8 +71,8 @@ contract MiningShare{
     function Withdraw() public onlyShareHolder afterCloseBlock {
         uint totalMined = totalWithdraw.add(address(this).balance);
         //totalMined * hisNTD / totalNTD - userWithdraw
-        uint userCanWithaw = totalMined.mul(
-            userNTD[msg.sender].div(totalNTD)).sub(
+        uint userCanWithaw = totalMined.mul(userNTD[msg.sender].div(
+            totalNTD)).sub(
                 userWithdraw[msg.sender]);
         
         userWithdraw[msg.sender].add(userCanWithaw);
